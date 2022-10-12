@@ -1,0 +1,16 @@
+- Create Style and layout for product pages
+- Create JS for Navbar responsive in small screen
+- Create CSS for content on large screen
+- Create JS for slider product images
+- Create JS for product quantity, increment and decrement
+- Install Django : Pip install Django
+- Create Shoestore project : django-admin startproject Shoestore
+- In Shoestore create App called store --- python manage.py startapp store
+- Add 'store.apps.StoreConfig' to Settings > installed apps
+- Check and confirm installation -> python3 manage.py runserver
+- create urls.py in app and add path for store, cart and checkout
+- update urls.py in the root directory to include store.urls
+- create static folder in root dir to hold CSS and images folders
+- Create Virtual Environment (python -m venv shoestore_env) + (source shoestore_env/bin/activate)    
+- Check that static CSS and Images are functioning
+- Create HTML for main page
