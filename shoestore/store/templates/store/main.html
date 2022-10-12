@@ -17,8 +17,60 @@
     <title>Footitude Vintage Shoes</title>
 </head>
 <body>
-    <h1>navbar</h1>
-    <hr>
+    
+    <header class="header">
+
+        <div class="container">
+            <button class="nav-open-btn" aria-label="open-menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+            <a href="" class="logo"><img src="{% static 'images/logo.png' %}" width="200" height="100" alt="Logo Home"></a>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="" class="navbar-link">Collection</a>
+                    </li>
+                    <li>
+                        <a href="" class="navbar-link">Sneakers</a>
+                    </li>
+                    <li>
+                        <a href="" class="navbar-link">Shoes</a>
+                    </li>
+                    <li>
+                        <a href="" class="navbar-link">About</a>
+                    </li>
+                    <li>
+                        <a href="" class="navbar-link">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="header-action">
+
+                <button class="header-action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="profile-btn" aria-label="profile">
+                    <ion-icon name="person"></ion-icon>
+                </button>
+            </div>
+
+            <div class="overlay" data-overlay data-nav-toggler>
+
+
+            </div>
+        </div>
+    </header>
+
 
     <div class="container">
 
