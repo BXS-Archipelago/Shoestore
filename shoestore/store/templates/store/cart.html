@@ -6,6 +6,95 @@
 
 
     <h3>CART</h3>
-{% endblock content %}
+<section class="section cart">
 
+        <div class="cart-item-box">
 
+            <h2 class="section-heading">Order Summary</h2>
+  
+            <div class="product-card">
+
+                <div class="card">
+
+                    <div class="img-box">
+                        <img src="{% static 'images/shoes-5.jpg' %}" width="100" height="100" loading="lazy" alt="Vintage Sneaker" class="product-img">
+                    </div>
+      
+                    <div class="detail">
+      
+                      <h4 class="product-name">Vintage Sneakers</h4>
+      
+                      <div class="wrapper">
+      
+                        <div class="product-qty">
+                          <button id="decrement">
+                            <ion-icon name="remove-outline"></ion-icon>
+                          </button>
+      
+                          <span id="quantity">1</span>
+      
+                          <button id="increment">
+                            <ion-icon name="add-outline"></ion-icon>
+                          </button>
+                        </div>
+      
+                        <div class="price">
+                          $ <span id="price">1.25</span>
+                        </div>
+      
+                      
+      
+                    
+      
+                    <button class="product-close-btn">
+                      <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+                </div>
+                  </div>
+
+            </div>
+
+   
+    <div class="totals-wrapper">
+
+        <div class="discount-token">
+
+          <label for="discount-token" class="label-default">Gift card/Discount code</label>
+
+          <div class="wrapper-flex">
+
+            <input type="text" name="discount-token" id="discount-token" class="input-default">
+
+            <button class="btn btn-outline">Apply</button>
+
+          </div>
+
+        </div>
+
+        <div class="amount">
+
+          <div class="subtotal">
+            <span>Subtotal</span> <span>$ <span id="subtotal">2.05</span></span>
+          </div>
+
+          <div class="tax">
+            <span>Tax</span> <span>$ <span id="tax">0.10</span></span>
+          </div>
+
+          <div class="shipping">
+            <span>Shipping</span> <span>$ <span id="shipping">0.00</span></span>
+          </div>
+
+          <div class="total">
+            <span>Total</span> <span>$ <span id="total">2.15</span></span>
+          </div>
+
+        </div>
+
+      </div>
+
+</section>
+
+ 
+        {% endblock content %}
